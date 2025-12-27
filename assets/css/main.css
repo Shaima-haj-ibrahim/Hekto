@@ -532,7 +532,7 @@ columns: #151875;
 
 
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .leatest_products .product {
     width: calc((100% - 37px) / 2); 
   }
@@ -547,7 +547,7 @@ columns: #151875;
 }
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .leatest_products {
     padding: 40px 0;
   }
@@ -588,12 +588,118 @@ columns: #151875;
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .leatest_products .image {
     height: 200px;
   }
 }
 /* leatest products end*/
+
+/* start what shop offers */
+.offers h2{
+width: 100%;
+text-align: center;
+color:#151875;
+font-size: 42px;
+margin-bottom: 55px;
+}
+
+.offers .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+ .offers .support{
+    width: calc((100% - 84px ) / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 320px;
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 53px;
+
+ }
+ .offers h3{
+    color: #151875;
+    font-family: Josefin Sans;
+font-weight: 600px;
+font-size: 22px;
+
+line-height: 100%;
+letter-spacing: 0%;
+
+ }
+
+ .offers p{
+    font-family: Lato;
+font-weight: 700px;
+font-size: 16px;
+
+line-height: 25.6px;
+letter-spacing: 0%;
+text-align: center;
+color: #1A0B5B4D;
+ }
+
+
+.offers .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F6F7FB;
+    width: 65px;
+    height: 65px;
+
+    opacity: 1;
+}
+
+ .offers .support{
+  border: 5px solid transparent;
+  transition: 0.1s ;
+}
+
+.offers .support:hover {
+  border-color: #c084fc; 
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .offers .support {
+        width: calc((100% - 28px) / 2);
+    }
+
+    .offers h2 {
+        font-size: 34px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .offers .support {
+        width: 100%;
+    }
+
+    .offers h2 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .offers h3 {
+        font-size: 20px;
+    }
+
+    .offers p {
+        font-size: 15px;
+    }
+}
+/* end what shop offers*/
 
 /*hero start*/
 
@@ -644,6 +750,7 @@ columns: #151875;
    color: #E7E6EF;
 
 }
+
 
 
 
